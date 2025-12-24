@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <label for="">Search the site fot yhye movie details</label>
+        <input id="search" name="search" type="text">
+    <form id="form1" method="post">
+        <div>
+            <h1>Movie Award Nomation</h1>
+        </div>
+       <fieldset>
+           <legend>about the movie 1</legend>
+           <div>
+           <label for="film">The film</label>
+           <input type="text" id="film" name="film" placeholder="sprider" autofocus>
+           </div>
+
+           <div>
+           <label for="yearofRealease">The film in quetion?</label>
+           <input type="number" id="yearofRealease" name="yearofRealease" min="2000" max="2020">
+           </div>
+            
+
+           <div>
+           <label for="awardwon">Award Won</label>
+           <input type="text" id="awardwon" name="awardwon" list="awards">
+           <datalist id="awards">
+               <select name="" id="">
+
+                <option value="Best Picture"></option>
+               <option value="Best Actor"></option>
+               <option value="Best Dancer"></option>
+               </select>
+           </datalist>
+           </div>
+
+           <div>
+            <label for="bestpart">Tell us which is the best part about the movie</label>
+            <textarea name="bestpart" id="bestpart" placeholder="describe">This ts the best movie</textarea>
+           </div>
+          
+
+           <div>
+            <label for="howyourate"></label>
+            <input type="range" min="1" max="10" value="5" id="howyourate"  onchange="showValue(this.value)">
+            <span id="range">5</span>
+           </div>
+           <script>
+            function showValue(newValue){
+                document.getElementById("range").innerHTML=newValue
+            }
+           </script>
+       </fieldset>
+
+       <fieldset>
+           <legend>about the movie 2</legend>
+        <div>
+           <label for="filmAlt">The other film you would recommend</label>
+           <input type="text" name="why" id="why">
+        </div>
+
+        <div>
+            <label for="howyourate"></label>
+            <input type="number" min="1" max="10" value="5" id="howyourate" required >
+           </div>
+
+       </fieldset>
+
+       <fieldset>
+           <legend>about the movie 3</legend>
+           <div>
+              <label for="name"></label>
+              <input type="text" name="name" id="name" pattern="^([\D]{5,30}\s)+(]a-zA-Z){5,20}">
+           </div>
+
+           <div>
+              <label for="color">Your favorite Color</label>
+              <input type="color" id="color">
+           </div>
+
+           <div>
+              <label for="date">Select the  date</label>
+              <input type="date" name="date" id="date">
+           </div>
+
+           <div>
+              <label for="month">Select the  date</label>
+              <input type="month" name="month" id="month">
+           </div>
+
+           <div>
+              <label for="week">Select the  date</label>
+              <input type="week" name="week" id="week">
+           </div>
+         
+           <div>
+              <label for="date">Select the  date</label>
+              <input type="time" name="date" id="date">
+           </div>
+           <div>
+              <label for="tel">Telephone</label>
+              <input type="tel" id="tel" name="tel" autocomplete="off">
+           </div>
+
+
+           <div>
+              <label for="email">email</label>
+              <input type="email" id="email" name="email">
+           </div>
+
+           <div>
+              <label for="web">your web site address</label>
+              <input type="web" id="web" name="web">
+           </div>
+
+       </fieldset>
+       <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

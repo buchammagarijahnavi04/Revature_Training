@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getLocation(){
+            //check if geolocation is available in your browser
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition,showError)
+            }
+            else{
+                document.getElementById('errorOutput').textContent="Geolocation is not supported by the browser"
+            }
+        }
+
+     //Funtion to display the position
+     function showPosition(position){
+        const latitude=position.coords.latitude;
+        const longitude=position.coords.longitude;
+        const accuracy=position.coords.accuracy;
+        const output=document.getElementById('locationOutput');
+        output.innerHTML=`<p><strong>Latitude:</strong> ${latitude} </p>
+         <p><strong>Longitude:</strong> ${longitude}} </p>
+        <p><strong>Accuracy:</strong> ${accuracy} </p>
+          `
+          document.getElementById('errorOutput').textContent=" ";//clear any previous error
+     }
+     //function to handle error
+     function showError(error){
+        let errorMessage="";
+        switch(error.code){
+            case error.PERMISSION_DENIED:
+                errorMessage="User denied the request for Geolocation";
+            break;
+
+             case error.PERMISSION_UNAVAILABLE:
+                errorMessage="Geolocation infomartion is Unavailable";
+            break;
+
+        case error.TIMEOUT:
+            errorMessage='The request is timed out'
+        case error.UNKNOWN_ERROR:
+            errorMessage="An unknown error occured";
+            break;
+         }
+         document.getElementById('errorOutput').textContent=errorMessage;
+         document.getElementById('locationOutput').innerHTML="";
+     }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Geolocation Api</h1>
+        <p>Click the button below to get your current location</p>
+        <button onclick="getLocation()">Get current location</button>
+        <div id="locationOutput">
+            <!-- Display the location info here-->
+        </div>
+        <div>
+
+        </div id="errorOutput">
+    </div>
+</body>
+</html>

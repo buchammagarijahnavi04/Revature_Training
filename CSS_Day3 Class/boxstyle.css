@@ -1,0 +1,22 @@
+.header{
+    width: 600px;
+    border: 2px solid red;
+    padding: 5px;
+    background-color: bisque;
+    text-align:center;
+}
+.article1{
+    width: 600px;
+    padding: 5px;
+    border: 2px solid brown;
+    background-color: blanchedalmond;
+    padding: 10px;
+
+}
+.article2{
+     width: 600px;
+    padding: 5px;
+    border: 2px solid brown;
+    background-color: blanchedalmond;
+    
+}

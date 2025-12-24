@@ -1,0 +1,66 @@
+
+<html>
+    <head>
+        <meta  name="viewport" content="initial-scale=1.0 ,width=device-width "/>
+<style>
+    .linear-gradient{
+        background: linear-gradient( to bottom right,
+        violet 20%,
+        indigo 20%,
+        blue 20%,
+        green 50%,
+        yellow 60%,
+        orange 70%,
+        red 70%
+
+        );
+        width: 600px;
+        height: 400px;
+    }
+
+    .radial-gradient{
+        margin: 1rem ;
+        width: 600px;
+        height: 400px;
+        background: radial-gradient(closest-corner circle at center , yellow,rgb(118, 105, 234));
+    }
+
+    .repeat-gradient{
+        margin: 1rem ;
+        width: 600px;
+        height: 400px;
+        background: repeating-radial-gradient(black 0px ,orange 5px, red 10px) 
+    }
+ 
+
+    .shape-change{
+    height: 400px;
+    width: 400px;
+    clip-path: circle(50% at center);
+}
+.radial-gradient-yellow{
+    margin:1rem;
+    width:400px;
+    height: 200px;
+    background-color:  rgb(20%, 60%, 30%);
+}
+    </style>
+    </head>
+    <body> 
+       <div class="linear-gradient"></div>
+        <div class="radial-gradient-yellow"></div>
+        <div class="radial-gradient"></div>
+        <div class="repeat-gradient"></div>
+        <div class="shape1"> 
+            <p>
+             Hello world    
+            </p>
+            <img  src="https://i.pinimg.com/474x/fe/9f/e6/fe9fe6151b0a64314c6aa78f6339508b.jpg"/>
+          
+        </div>
+
+        <figure class="shape-change">
+            <img src="https://supertails.com/cdn/shop/articles/bird-breed_2cd7d88f-2438-4acf-9bd8-64c561ae55ae.jpg?v=1747132798"/>
+        </figure>
+    </body>
+</html>

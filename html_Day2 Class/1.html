@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <style>
+        .forecast {
+        margin: 0;
+        padding: 0.3rem;
+        background-color: #eeeeee;
+        }
+
+        .forecast > h1,
+        .day-forecast {
+        margin: 0.5rem;
+        padding: 0.3rem;
+        font-size: 1.2rem;
+        }
+
+        .day-forecast {
+        background: right/contain content-box border-box no-repeat
+            url("/shared-assets/images/examples/rain.svg") white;
+        }
+
+        .day-forecast > h2,
+        .day-forecast > p {
+        margin: 0.2rem;
+        font-size: 1rem;
+        }
+        a[href^="mailto"]::before {
+        content: "📧 ";
+        }
+
+        a[href^="tel"]::before {
+        content: "📞 ";
+        }
+
+        dl {
+        font:
+            1rem "Fira Sans",
+            sans-serif;
+        }
+
+        dl > dt {
+        font-weight: normal;
+        font-style: oblique;
+        }
+
+        dd {
+        margin-bottom: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <article class="forecast">
+        <h1>Weather forecast for Seattle</h1>
+        <article class="day-forecast">
+            <h2>03 March 2018</h2>
+            <p>Rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>04 March 2018</h2>
+            <p>Periods of rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>05 March 2018</h2>
+            <p>Heavy rain.</p>
+        </article>
+    </article>
+    <p>Contact the author of this page:</p>
+
+    <address>
+    <a href="mailto:jim@example.com">jim@example.com</a><br />
+    <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+    </address>
+
+    <dl>
+        <dt>Denim (semigloss finish)</dt>
+        <dd>Ceiling</dd>
+
+        <dt>Denim (eggshell finish)</dt>
+        <dt>Evening Sky (eggshell finish)</dt>
+        <dd>Layered on the walls</dd>
+    </dl>
+    <figure>
+        <img
+            src="https://sp.yimg.com/ib/th/id/OIP.qQkBQH7xkJs-088IYfrpbQHaFQ?pid=Api&w=148&h=148&c=7&dpr=2&rs=1"
+            alt="Elephant at sunset" />
+        <figcaption>An elephant at sunset</figcaption>
+    </figure>
+    <blockquote cite="https://datatracker.ietf.org/doc/html/rfc1149">
+    <p>
+        Avian carriers can provide high delay, low throughput, and low altitude
+        service. The connection topology is limited to a single point-to-point path
+        for each carrier, used with standard carriers, but many carriers can be used
+        without significant interference with each other, outside early spring. This
+        is because of the 3D ether space available to the carriers, in contrast to
+        the 1D ether used by IEEE802.3. The carriers have an intrinsic collision
+        avoidance system, which increases availability.
+    </p>
+    </blockquote>
+</body>
+</html>

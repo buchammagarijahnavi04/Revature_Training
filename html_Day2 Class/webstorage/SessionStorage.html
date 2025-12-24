@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <section>
+        <header>What is the sessionStorage</header>
+    </section>
+    <p>Enter Your Name</p>
+    <input type="text" id="name">
+    <p>Click this button to set it to the session storage</p>
+    <input type="button" value="Set data" onclick="setItem()">
+    <p>Open the webpage in another tab</p>
+    <p>Click this button to get data from the session storage</p>
+    <input type="button" value="Get data" onclick="getItem()">
+    <p>Close this page and open again and click 'Get data'</p>
+    <p>Click the button to remove</p>
+    <input type="button" value="remove item" onclick="removeItem()" >
+
+    <script>
+        function  setItem(){
+            if(typeof Storage !== 'undefined'){
+            let name=document.getElementById('name').value
+            sessionStorage.myName=name;
+            }
+        }
+
+        function getItem(){
+            if(typeof Storage !== 'undefined'){
+                alert(sessionStorage.myName)
+            }
+
+        }
+
+        function removeItem(){
+            sessionStorage.removeItem('myName')
+            alert("Removed")
+        }
+    </script>
+</body>
+</html>

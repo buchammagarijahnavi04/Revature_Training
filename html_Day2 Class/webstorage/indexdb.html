@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Indexdb simple example
+    </h1>
+    <button onclick="addData()">Add data</button>
+    <button onclick="readData()">Read data</button>
+
+    <p id="output"></p>
+    <script>
+        let db=null;
+   //open or create the database
+       let request= indexedDB.open('studentDB',1)
+    //Create object storage(table)
+    req.onupgradeneeded=function(event){
+        db=event.target.result
+        db.createObjectStorage('students',{keyPath : "id"})
+    }
+    //on success
+    request.onsuccess=function(event){
+        db.event.target.result
+    }
+    //on Error
+    request.onerror=function(){
+        document.getElementById('output').innerText="Error openining database"
+    }
+
+    //Add data(you can get from user alternatively)
+    function addData(){
+    let transaction=db.transaction(["students"],"readwrite")
+    let store=transaction.objectStorage("students")
+    let student = {
+        id:1,
+        name:'Janu',
+        age: 20
+    }
+}
+    store.add(student);
+    document.getElementById('output').innerHTML="Data Added"
+
+    //Read Data
+    function readData(){
+        let traction=db.transaction(["students"],"readonly")
+    let storage=transaction.objectStorage("students")
+
+    request.onsuccess=function(){
+        let data = request.result
+        if(data){
+            document.getElementById('output').innerHTML="Name:"+ data.name + "Age:" + data.age
+        }
+        else{
+            document.getElementById('output').innerText="No data found"
+        }
+    }
+
+    }
+    </script>
+</body>
+</html>
