@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <div id="divvy"  
+        style ='width:100px;height: 100px; background-color: pink;'>A block</div>
+
+        <script>
+window.onload = function donenow() {
+    console.log("Hi") ;
+    document.getElementById('divvy').addEventListener('mousedown' , function () {
+        changeColor(this,'green')
+    }) ;
+    document.getElementById('divvy').addEventListener('mouseup' , function () {
+        changeColor(this,'yellow')
+    }) ;
+    document.getElementById('divvy').addEventListener('dblclick' , function () {
+        changeColor(this,'black')
+    }) ;
+    document.getElementById('divvy').addEventListener('mouseout' , function () {
+        changeColor(this,'blue')
+    }) ;
+
+    function changeColor(el, color){
+                el.style.backgroundColor =color
+        }
+
+    console.log("Hello") ;
+
+}
+       
+        </script>
+    </body>
+</html> 

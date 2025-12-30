@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .FlexWrapper{
+          background-color: antiquewhite;
+          display:flex;
+          height: 200px;
+          width: 100%;
+          align-items: center;
+        }
+
+         .FlexItem{
+            background-color: aquamarine;
+            border: 1px solid red;
+            display: flex;
+            height:100px;
+            
+        }
+        .Flexone{
+            flex:1.5 0 auto;
+        }
+        .Flextwo, .Flexthree{
+            flex:1 0.5 auto;
+        }
+          
+    </style>
+</head>
+<body>
+     <div class="FlexWrapper">
+        <div class="FlexItem Flexone">
+            I am content inner felxbox  1
+        </div>
+         <div class="FlexItem Flextwo">
+            I am content inner felxbox  2
+        </div>
+         <div class="FlexItem Flexthree">
+            I am content inner felxbox  3
+        </div>
+    </div>
+</body>
+</html>

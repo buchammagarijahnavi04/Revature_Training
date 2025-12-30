@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+    <script>
+        function onChangeHandler(){
+            var name = event.target.value
+            console.log(`-------------${event.target}-----------`)
+            console.log(`Value: ${event.target.value}`)
+             console.log(`Type: ${event.target.type}`)
+            var lbl=document.getElementById('lbl')
+            lbl.innerHTML = `<b> Welcome!  ${event.target.value} </b>`
+            let newele = document.createElement('p');
+            newele.innerText = name + 'This is created dynamically';
+            document.body.appendChild(newele)
+
+        }
+        function onButtonClicked(){
+            console.log(`-------------${event.target}-----------`)
+            console.log(`Value: ${event.target.value}`)
+             console.log(`Type: ${event.target.type}`)
+        }
+    </script>
+</head>
+<body>
+    <label id="lbl"></label>
+    <input type="text" name="name" id="name" onchange="onChangeHandler()" value="unknown">
+    <button type="button" onclick="onButtonClicked()"> Click </button>
+</body>
+</html>

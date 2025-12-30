@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .FlexWrapper{
+          background-color: antiquewhite;
+          display:flex;
+          height: 200px;
+          width: 400px;
+
+          align-items: center;
+        }
+        .FlexItem{
+            background-color: aquamarine;
+            display: flex;
+            height: 100px;
+            width: 600px;
+            align-items: start;
+        }
+        .AlignSelf{
+            align-self:flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="FlexWrapper">
+        <div class="FlexItem">
+            I am content inner felxbox  1
+        </div>
+         <div class="FlexItem Alignself">
+            I am content inner felxbox  2
+        </div>
+         <div class="FlexItem">
+            I am content inner felxbox  3
+        </div>
+    </div>
+</body>
+</html>

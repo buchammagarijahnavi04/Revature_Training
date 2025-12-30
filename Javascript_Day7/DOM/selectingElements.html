@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function selectElement(){
+        console.log("Element id Two",document.getElementById('two').innerHTML)
+        console.log("Element id one",document.getElementsByTagName('div').item(0).innerHTML)
+        console.log("Element id three",document.getElementsByTagName('div').namedItem('three').innerHTML)
+        console.log("All div",document.getElementsByTagName('div'))
+        console.log("All h1",document.getElementsByTagName('h1'))
+        console.log("All Example Class",document.getElementsByClassName('Example'))
+        console.log("Query Selector",document.querySelector("h1").innerText)
+        }
+    </script>
+</head>
+<body>
+    <h1>Selecting Elements</h1>
+    <div id="one" class="example">Hi!</div>
+    <div id="two" class="example">From 2nd Div</div>
+    <div id="three" class="something">Hi! from third div</div>
+    <input type="button" onclick="selectElement()" value="Click">
+</body>
+</html>
+
+<!-- //can access elements,by id,class type -->

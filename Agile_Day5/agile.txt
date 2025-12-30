@@ -1,0 +1,93 @@
+to state the precisely the requirements the software product needs to satisfy
+to produce design that will meet the requirements.
+The project needs to be planned and delivered on time and budget
+
+Requirement Specification
+Clear , unambiguous and reflects the customer's need.
+
+Software development policy
+Process maps that describe the flow of activities
+Procedures and guidelines that describe the process in more detail
+Checklists to assist with the performance of the process.
+Templates for the performance of specific activities 
+Training Materials 
+
+The processes employed to develop high-quality software
+Project Management Process
+Requirement Process
+Design process
+Coding Process
+Peer Review Process
+Testing Process
+Supplier Selection and Management Processes
+Configuration Management Process
+Audit Process
+Measurement Process
+Improvement Process
+Customer Support and Maintenance Processes
+
+
+Planning --
+What the users want , what to build to address those needs.
+Requirements Elicitation - is the process of discovering user needs and writing them down as user requirements.
+
+Requirement Analysis is the process of prioritizing user requirements from various sources and defining what to build as a product 
+Feasibility 
+Requirement Specification Document
+Functional Requirements and non Functional Requirements
+
+Design Phase , diagrams, pictures, charts 
+use case diagrams
+
+Modularity 
+Cohesion and coupling
+Good modular system should have loose coupling and high cohesion with modules 
+Dependency injection
+
+A module has a cohesion if the module has one responsibility and all its elements relate to that responsibility
+
+
+
+Agile is a set of  methods and methodologies that help your team to think more effectively , work more efficiently and make better decisions
+
+Agile is also mindset .
+
+Agile is fundamentally a mindset, a way of thinking about work that prioritizes flexibility, collaboration, continuous learning, and rapid adaptation to change, rather than just a rigid set of processes or rules.
+
+The 4 Core Agile Values
+Individuals and Interactions Over Processes and Tools: Values people and how they work together more than rigid processes or specific tools, recognizing that good communication drives success.
+Working Software Over Comprehensive Documentation: Prioritizes delivering functional, valuable software to customers quickly over extensive upfront documentation, which can become outdated.
+Customer Collaboration Over Contract Negotiation: Focuses on ongoing partnership with the customer throughout the project, rather than being locked into initial, inflexible contracts.
+Responding to Change Over Following a Plan: Embraces changing requirements, even late in development, to provide the customer with a competitive advantage, instead of rigidly adhering to an initial plan. 
+
+
+Individuals and Interactions Over Processes and Tools:
+Few common characteristics of Team members
+Good Communication 
+Good Practices
+
+daily standups and retrospectives
+Working Software Over Comprehensive Documentation
+Customer Collaboration Over Contract Negotiation   SLA
+Responding to Change Over Following a Plan
+
+
+
+
+SPRINT 
+
+
+ 
+ 
+In Agile, project velocity is a metric measuring how much work a development team completes per iteration (sprint), usually in story points, to help with planning, forecasting timelines, and identifying process improvements, not for comparing teams. It's calculated by summing the points of completed user stories, providing a stable baseline for a team's capacity, revealing trends, and setting realistic goals for future sprints. 
+
+Project managers track task board, project velocity and burndown charts
+
+task board, project velocity, user story point , burndown chart, burnup chart
+
+Sprint planning 
+1.start with the most valuable user stories from the product backlog
+
+Take a story in that list -
+Discuss with the team 
+ keep going going through the stories until you have accumulated enough points to fill the spring

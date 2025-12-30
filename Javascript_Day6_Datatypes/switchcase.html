@@ -1,0 +1,45 @@
+<!-- //-----------------------------Switch Example ----------------------- -->
+<html>
+<script language=JavaScript>
+function uploadPicture(){
+myForm.myPicture.src=myForm.pic.value;
+var checkFile;
+checkFile=myForm.pic.value.substring(myForm.pic.value.lastIndexOf(".")+1,
+myForm.pic.length)
+checkFile=checkFile.toUpperCase();
+switch(checkFile){
+case "GIF":
+alert("You are uploading GIF picture, ok!");
+break;
+case "JPG":
+alert("You are uploading JPG picture, ok!");
+break;
+case "BMP":
+alert("You are uploading BMP picture, ok!");
+break;
+case "PNG":
+alert("You are uploading PNG picture, ok!");
+break;
+default:
+alert("Error! Only gif, jpg, bmp, png pictures allowed to upload!")
+break;
+}}
+</script>
+<title>Check Picture Upload</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<body>
+<br>
+<p align="center" >Only gif, jpg, bmp, png allowed to upload! </p>
+<form name="myForm" id=myForm>
+<p align=center>
+<input name=pic type="file" size="10">
+</p>
+<p align=center>
+<input name="button" type=button onClick="uploadPicture()"
+value='Upload Picture ' />
+</p>
+<p align="center"><img name="myPicture"  id="myPicture"/>
+</p>
+</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide{
+            display: none;
+        }
+        .square{
+            height: 100px;
+            width:100px;
+            background-color: aqua;
+        }
+        .square.blue{
+            background-color: blue;
+        }
+    </style>
+    <script>
+        function disaapearColor(){
+            document.getElementById('shape').classList.remove('blue');
+            // document.getElementById('shape').classList.add('hide');
+        }
+        function disaapearBox(){
+            // document.getElementById('shape').classList.remove('blue');
+            document.getElementById('shape').classList.add('hide');
+        }
+        function toggleBox(){
+            document.getElementById('shape').classList.toggle('hide');
+        }
+    </script>
+</head>
+<body>
+    <div id="shape" class="square blue">I might appear and disaapear</div>
+    <button id="One" onclick="disaapearColor()">Disappear Color</button>
+    <button id="One" onclick="disaapearBox()">Disappear Box</button>
+    <button id="One" onclick="toggleBox()">Toggle Box</button>
+</body>
+</html>

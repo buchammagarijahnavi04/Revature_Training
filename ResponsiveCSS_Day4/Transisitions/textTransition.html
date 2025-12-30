@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            font-family: Arial, Helvetica, sans-serif;
+            color: bisque;
+            text-indent: 1rem;
+            background-color: blue;
+            display: inline-flex;
+            flex: 1 1 20%;
+            align-self: stretch;
+            align-items: center;
+            text-decoration: none;
+            /* transition: box-shadow 3s; */
+            transition: border 2s,color 3s, text-shadow;
+        }
+        a + a {
+            border-left: 2px solid rgb(240, 98, 10);
+        }
+        a:hover{
+            box-shadow: inset 0 -3px 0 rgb(221, 39, 163) ;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </nav>
+</body>
+</html>
